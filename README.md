@@ -22,11 +22,12 @@ The dataset made available by the author pays attention to pneumonia diseases si
 So the dataset mainly provides a subdivision between: Pneumonia cases (MERS, SARS, and ARDS) and COVID19.
 The data are few in previous repository. 
 
-I opted to add more data to my dataset both in train and in test in order to achieve greater reliability and to reach 70% for training and 30% for testing in case of Pneumonia cases and then another class was used. In this case I have used class "normal" to indentify a good status of healthy.
-The class added "Normal" and the additional data for penumonia cases are available at the follow link:
+I opted to add more data to my dataset both in train and in test in order to achieve much performance and to reach 70% for training and 30% for testing in case of Pneumonia cases. 
+Another class was used. In this case I have used class "normal" to indentify a good status of healthy.
+The added class "Normal" and the additional data for penumonia cases are available at the follow link:
 https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
-
 The images between the two datasets are both X-RAY.
+
 
 Dataset: 
 1. Train
@@ -54,7 +55,7 @@ $ cd test/pneumonia
 $ python create_dataset.py
 ```
 
-About the "Normal" class you should download the follow dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
+The "Normal" class is avaiable at the follow dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
 
 Don't forget what has been said previously. That is, if you want more data you must also use the previous dataset and add more data for pneumonia in order to have a 70% - 30% dataset.
 
