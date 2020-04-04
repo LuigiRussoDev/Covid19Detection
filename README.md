@@ -65,8 +65,19 @@ To train model you should run:
 ```sh
 $ python resnet2.py
 ```
+### Hyperparameter
+For the training the following hyperparameters are used: 
+- Adam in schedule
+- 100 Epochs
+- BatchSize 16
+- Last layer a softmax is used
+- Loss function Cross Entropy Categorical is used 
+- Learning rate in schedule
 
-### Evaluations:
+
+
+
+### Results:
 - Accuracy: 0.94
 - Val Accuracy: 0.86
 - Val Loss: 0.34
@@ -79,6 +90,7 @@ COVID19 | 0.93 | 0.81 | 0.86 | 31
 
 ![](img/confusion_matrix.png)
 
+As we can see there is a lot of "miss classification" when we compare an image XRay Pneumonia is also classified as COVID. This occurs COVID looks like Pneumonia just like the Pneumonia dataset.
 
 
 
