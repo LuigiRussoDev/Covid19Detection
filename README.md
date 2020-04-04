@@ -26,9 +26,9 @@ In summary I added more pneumonia data from the train and test dataset. Pneumoni
 
 Dataset: 
 1. Train
-    2. Pneumonia: 80
-    3. COVID19: 80
-    4. Normal: 80
+    1. Pneumonia: 80
+    2. COVID19: 80
+    3. Normal: 80
 2. Testing
     1. Pneumonia: 25
     2. COVID19: 25 
