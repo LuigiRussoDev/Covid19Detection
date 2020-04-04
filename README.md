@@ -75,8 +75,6 @@ For the training the following hyperparameters are used:
 - Learning rate in schedule
 
 
-
-
 ### Results:
 - Accuracy: 0.94
 - Val Accuracy: 0.86
