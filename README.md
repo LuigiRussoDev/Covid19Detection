@@ -67,7 +67,7 @@ $ python resnet2.py
 ```
 ### Hyperparameter
 For the training the following hyperparameters are used: 
-- Adam in schedule
+- AdamOptimization in schedule
 - 100 Epochs
 - BatchSize 16
 - Last layer a softmax is used
