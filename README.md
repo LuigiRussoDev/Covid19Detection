@@ -48,11 +48,11 @@ In order to avoid always uploading the images before training I uploaded the dat
 If you want download dataset, first you need to download repository: https://github.com/ieee8023/covid-chestxray-dataset and then run:
 
 ```sh
-$ cd train/covid19
-$ cd train/pneumonia
-$ cd test/covid19
-$ cd test/pneumonia
-$ python create_dataset.py
+$ mkdir -p train/covid19
+$ mkdir -p train/pneumonia
+$ mkdir -p test/covid19
+$ mkdir -p test/pneumonia
+$ mkdir -p create_dataset.py
 ```
 
 The "Normal" class is avaiable at the follow dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
