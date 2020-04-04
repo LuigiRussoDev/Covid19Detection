@@ -7,7 +7,7 @@ I have tried to make the project as personal as possible.
 The model is a Convolutional Neural Network with shortcuts as showed in this paper: https://arxiv.org/pdf/1512.03385.pdf
 
 ### Libraries
-For develop ResNet I have used Python as language programmin and libraries for machine learning as follows:
+My ResNet50 model was developed with the Python programming language and the following libraries:
  - Keras 2.3
  - TensorFlow 2.0
  - Python 3.6
@@ -15,33 +15,66 @@ For develop ResNet I have used Python as language programmin and libraries for m
  
 ### Dataset
 
-As for the dataset I used the following: https://github.com/ieee8023/covid-chestxray-dataset
-This dataset is the best known at the moment as regards the chest X-ray or CT images from Covid19. In particular, attention is paid to the repository is currently still "under construction" that is, it is still under construction. For more information, consult the dataset.
+About dataset I used the following: https://github.com/ieee8023/covid-chestxray-dataset
+This dataset is the best known at the moment as regards the chest X-ray images from Covid19. In particular, attention is paid to the repository is currently still "working in progress".
 
 The dataset made available by the author pays attention to pneumonia diseases since COVID19 is a virus that attacks the lungs causing Pneumonia.
-So the dataset mainly provides a subdivision between: Pneumonia and Covid.
+So the dataset mainly provides a subdivision between: Pneumonia cases (MERS, SARS, and ARDS) and COVID19.
+The data are few in previous repository. 
 
-Personally I opted to add more data to my dataset both in training and in testing in order to achieve greater reliability and to reach 70% for training and 30% for testing.
-In summary I added more pneumonia data from the train and test dataset. Pneumonia data was delivered from the following dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
+I opted to add more data to my dataset both in train and in test in order to achieve greater reliability and to reach 70% for training and 30% for testing in case of Pneumonia cases and then another class was used. In this case I have used class "normal" to indentify a good status of healthy.
+The class added "Normal" and the additional data for penumonia cases are available at the follow link:
+https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
+
+The images between the two datasets are both X-RAY.
 
 Dataset: 
 1. Train
-    1. Pneumonia: 80
-    2. COVID19: 80
-    3. Normal: 80
+    1. Pneumonia: 70
+    2. COVID19: 70
+    3. Normal: 70
 2. Testing
-    1. Pneumonia: 25
-    2. COVID19: 25 
-    3. Normal: 25
+    1. Pneumonia: 30
+    2. COVID19: 30
+    3. Normal: 30
 
 ### Goal:
 The goal proposed in this paper is to detect Covid and Non-Covid diseases.
 Therefore I will try to make the model in question as perfect as possible by updating the dataset.
 
+### How to use:
+In order to avoid always uploading the images before training I uploaded the data located in the "data" as numpy array. 
+If you want download dataset, first you need to download repository: https://github.com/ieee8023/covid-chestxray-dataset and then run:
+
+```sh
+$ cd train/covid19
+$ cd train/pneumonia
+$ cd test/covid19
+$ cd test/pneumonia
+$ python create_dataset.py
+```
+
+About the "Normal" class you should download the follow dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
+
+Don't forget what has been said previously. That is, if you want more data you must also use the previous dataset and add more data for pneumonia in order to have a 70% - 30% dataset.
+
+
+
+To train model you should run:
+```sh
+$ python resnet2.py
+```
+
 ### Evaluations:
 - Accuracy: 0.94
 - Val Accuracy: 0.86
 - Val Loss: 0.34
+
+Results | #Precision | #Recall | #f1-score | #support 
+--- | --- | --- | --- |--- 
+Normal | 0.97 | 0.97 | 0.97 | 31 
+Pneumonia | 0.33 | 0.60 | 0.43 | 5 
+COVID19 | 0.93 | 0.81 | 0.86 | 31 
 
 ![](img/confusion_matrix.png)
 
