@@ -39,9 +39,9 @@ The goal proposed in this paper is to detect Covid and Non-Covid diseases.
 Therefore I will try to make the model in question as perfect as possible by updating the dataset.
 
 ### Evaluations:
-Accuracy: 0.94
-Val Accuracy: 0.86
-Val Loss: 0.34
+- Accuracy: 0.94
+- Val Accuracy: 0.86
+- Val Loss: 0.34
 
 ![](img/confusion_matrix.png)
 
