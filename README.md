@@ -1,7 +1,7 @@
 # Covid19Detection
 In this project I want to show the results about detections COVID19 through X-Ray Images using a DeepLearning approach. 
-Although the data available are still scarce, I have tried to create a machine learning model through a neural network ResNet50. This model was made by myself and I did not make use of pretrained models available.
-I have tried to make the project as personal as possible.
+Although the data available are still scarce, I have tried to create a machine learning model through a neural network ResNet50. This model was made by myself so I didnt use pretrained models available.
+
 
  ### Model Description
 The model is a Convolutional Neural Network with shortcuts as showed in this paper: https://arxiv.org/pdf/1512.03385.pdf
@@ -15,15 +15,14 @@ My ResNet50 model was developed with the Python programming language and the fol
  
 ### Dataset
 
-About dataset I used the following: https://github.com/ieee8023/covid-chestxray-dataset
-This dataset is the best known at the moment as regards the chest X-ray images from Covid19. In particular, attention is paid to the repository is currently still "working in progress".
+I used dataset at the following link: https://github.com/ieee8023/covid-chestxray-dataset
+This dataset is the best known at the moment as regards the chest X-ray images from Covid19. In particular, attention is paid to the repository is currently still "working in progress". That's means it's always in updating mode.
 
-The dataset made available by the author pays attention to pneumonia diseases since COVID19 is a virus that attacks the lungs causing Pneumonia.
-So the dataset mainly provides a subdivision between: Pneumonia cases (MERS, SARS, and ARDS) and COVID19.
-The data are few in previous repository. 
+The dataset made available by the author pays attention to Pneumonia diseases since COVID19 is a virus that attacks the lungs causing Pneumonia.
+So the dataset mainly provides a subdivision between: Pneumonia cases (MERS, SARS, and ARDS) and COVID19. 2 classes.
 
-I opted to add more data to my dataset both in train and in test in order to achieve much performance and to reach 70% for training and 30% for testing in case of Pneumonia cases. 
-Another class was used. In this case I have used class "normal" to indentify a good status of healthy.
+I opted to add more data to my dataset both in train and in test in order to achieve much performance and to reach 70% for training and 30% for testing in case of Pneumonia class. 
+In this work it was used a third class. In this case I have used class "normal" to indentify a good status of healthy.
 The added class "Normal" and the additional data for penumonia cases are available at the follow link:
 https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
 The images between the two datasets are both X-RAY.
