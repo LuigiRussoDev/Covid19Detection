@@ -52,7 +52,7 @@ $ mkdir -p train/covid19
 $ mkdir -p train/pneumonia
 $ mkdir -p test/covid19
 $ mkdir -p test/pneumonia
-$ mkdir -p create_dataset.py
+$ python create_dataset.py
 ```
 
 The "Normal" class is avaiable at the follow dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
@@ -88,7 +88,15 @@ COVID19 | 0.93 | 0.81 | 0.86 | 31
 
 ![](img/confusion_matrix.png)
 
-As we can see there is a lot of "miss classification" when we compare an image XRay Pneumonia is also classified as COVID. This occurs COVID looks like Pneumonia just like the Pneumonia dataset.
+As we can see there is a lot of "miss classification" when we compare an image XRay Pneumonia is also classified as COVID. This occurs COVID looks like Pneumonia just like the Pneumonia dataset. 
+
+### Conclusion
+My goal is always to increase the dataset of images from COVID and to take care of the accuracy of my model.
+Through the confusion matrix it has been possible to observe that COVID images are often confused by the Pneumonia class which includes various pneumonia diseases. This "Miss classification" phenomenon is caused by the fact that COVID manifests itself as a form of Pneumonia just like the data in "Pneumonia".
+
+### Contact
+My contact is: luigi.russo@studenti.uniparthenope.it
+
 
 
 
