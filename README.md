@@ -55,8 +55,9 @@ For the training the following hyperparameters are used:
 - BatchSize 16
 - Last layer a softmax is used
 - Loss function Cross Entropy Categorical is used 
-- Learning rate in schedule
-
+- Learning rate in schedule from 0.001
+- BatchNorm 
+- Dropout
 
 ### Results:
 - Accuracy: 0.94
@@ -65,9 +66,9 @@ For the training the following hyperparameters are used:
 
 Results | #Precision | #Recall | #f1-score | #support 
 --- | --- | --- | --- |--- 
-Normal | 0.97 | 0.97 | 0.97 | 31 
-Pneumonia | 0.33 | 0.60 | 0.43 | 5 
-COVID19 | 0.93 | 0.81 | 0.86 | 31 
+Normal | 0.77 | 0.98 | 0.87 | 66 
+Pneumonia | 0.96 | 0.70 | 0.81 | 63 
+COVID19 | 0.94 | 0.92 | 0.93 | 66 
 
 ![](img/confusion_matrix.png)
 
