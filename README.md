@@ -14,57 +14,40 @@ My ResNet50 model was developed with the Python programming language and the fol
  - Matplotlib
  
 ### Dataset
+The dataset used for this work is available at the following link: https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
+In this dataset you can find 3 classes: 
+- Pneumonia
+- Normal
+- COVID19
+
+The dataset is already k-validated so dont need to split nothing. T
 <!--
 I used dataset at the following link: https://github.com/ieee8023/covid-chestxray-dataset
 This dataset is the best known at the moment as regards the chest X-ray images from Covid19. In particular, attention is paid to the repository is currently still "working in progress". That's means it's always in updating mode.
-
 The dataset made available by the author pays attention to Pneumonia diseases since COVID19 is a virus that attacks the lungs causing Pneumonia.
 So the dataset mainly provides a subdivision between: Pneumonia cases (MERS, SARS, and ARDS) and COVID19. 2 classes.
--->
-
 I opted to add more data to my dataset both in train and in test in order to achieve much performance and to reach 70% for training and 30% for testing in case of Pneumonia class. 
 In this work it was used a third class. In this case I have used class "normal" to indentify a good status of healthy.
 The added class "Normal" and the additional data for penumonia cases are available at the follow link:
 https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
 The images between the two datasets are both X-RAY.
-
-
-Dataset: 
-1. Train
-    1. Pneumonia: 70
-    2. COVID19: 70
-    3. Normal: 70
-2. Testing
-    1. Pneumonia: 30
-    2. COVID19: 30
-    3. Normal: 30
+-->
 
 ### Goal:
 The goal proposed in this paper is to detect Covid and Non-Covid diseases.
 Therefore I will try to make the model in question as perfect as possible by updating the dataset.
 
 ### How to use:
-In order to avoid always uploading the images before training I uploaded the data located in the "data" as numpy array. 
-If you want download dataset, first you need to download repository: https://github.com/ieee8023/covid-chestxray-dataset and then run:
+As we said previously you can download dataset at the following link: 
+https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
+Before to train you model you have to set path for dataset. It is advisable to upload images only once and store them in an array (in our case you can find array in "data")
+
+To train run: 
 ```sh
-$ mkdir -p train/covid19
-$ mkdir -p train/pneumonia
-$ mkdir -p test/covid19
-$ mkdir -p test/pneumonia
-$ python create_dataset.py
+$ python resnet4.py
 ```
 
-The "Normal" class is avaiable at the follow dataset: https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images
-
-Don't forget what has been said previously. That is, if you want more data you must also use the previous dataset and add more data for pneumonia in order to have a 70% - 30% dataset.
-
-
-
-To train model you should run:
-```sh
-$ python resnet2.py
-```
 ### Hyperparameter
 For the training the following hyperparameters are used: 
 - AdamOptimization in schedule
