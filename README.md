@@ -60,7 +60,7 @@ For the training the following hyperparameters are used:
 - Dropout
 
 ### Results:
-- Accuracy: 0.94
+- Accuracy: 0.98
 - Val Accuracy: 0.86
 - Val Loss: 0.34
 
@@ -72,7 +72,6 @@ COVID19 | 0.94 | 0.92 | 0.93 | 66
 
 ![](img/confusion_matrix.png)
 
-As we can see there is a lot of "miss classification" when we compare an image XRay Pneumonia is also classified as COVID. This occurs COVID looks like Pneumonia just like the Pneumonia dataset. 
 
 ### Conclusion
 My goal is always to increase the dataset of images from COVID and to take care of the accuracy of my model.
