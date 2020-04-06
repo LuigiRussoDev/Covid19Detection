@@ -14,12 +14,13 @@ My ResNet50 model was developed with the Python programming language and the fol
  - Matplotlib
  
 ### Dataset
-
+<!--
 I used dataset at the following link: https://github.com/ieee8023/covid-chestxray-dataset
 This dataset is the best known at the moment as regards the chest X-ray images from Covid19. In particular, attention is paid to the repository is currently still "working in progress". That's means it's always in updating mode.
 
 The dataset made available by the author pays attention to Pneumonia diseases since COVID19 is a virus that attacks the lungs causing Pneumonia.
 So the dataset mainly provides a subdivision between: Pneumonia cases (MERS, SARS, and ARDS) and COVID19. 2 classes.
+-->
 
 I opted to add more data to my dataset both in train and in test in order to achieve much performance and to reach 70% for training and 30% for testing in case of Pneumonia class. 
 In this work it was used a third class. In this case I have used class "normal" to indentify a good status of healthy.
