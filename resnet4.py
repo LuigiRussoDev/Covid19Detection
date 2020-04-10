@@ -12,13 +12,10 @@ import pickle
 from sklearn.metrics import classification_report
 import skimage
 from skimage.transform import resize
-
 from tensorflow import keras
 from tensorflow.keras import layers
-
-
-
 from tqdm import tqdm
+
 
 def lr_schedule(epochs):
 
