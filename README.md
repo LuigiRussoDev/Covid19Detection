@@ -35,7 +35,7 @@ The images between the two datasets are both X-RAY.
 
 ### Goal:
 The goal proposed in this paper is to detect Covid and Non-Covid diseases.
-Therefore I will try to make the model in question as perfect as possible by updating the dataset.
+Therefore I will try to make the model as accurate as possible. 
 
 ### How to use:
 As we said previously you can download dataset at the following link: 
