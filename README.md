@@ -18,12 +18,12 @@ For this project I used the follow dataset: https://github.com/ieee8023/covid-ch
 The other two classes: "Pneumonia" and "Normal" has been downloaded from here: https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
 The last link contains a lot of images than first link, so I splitted the train and test set as follow:
 
-1. Train (270image for each)
+1. Train (270 images for each)
    1. Normal: 
    1. Covid
    1. Pneumonia
 
-1. Test (87 for each)
+1. Test (87 images for each)
    1. Normal
    1. Covid
    1. Pneumonia
