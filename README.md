@@ -16,7 +16,7 @@ My ResNet50 model was developed with the Python programming language and the fol
 ### Dataset
 For this project I used the follow dataset: https://github.com/ieee8023/covid-chestxray-dataset. This is the landmark for image x-ray by covid. 
 The other two classes: "Pneumonia" and "Normal" has been downloaded from here: https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
-The last link contains a lot of images than first link (Image X-ray by Covid), so I splitted the train and test set as follow:
+The last link contains a lot of images than first link, so I splitted the train and test set as follow:
 
 1. Train (270image for each)
    1. Normal: 
