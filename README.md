@@ -72,9 +72,9 @@ For the training the following hyperparameters are used:
 
 Results | #Precision | #Recall | #f1-score | #support 
 --- | --- | --- | --- |--- 
-Normal | 0.73 | 0.87 | 0.80 | 87 
-Pneumonia | 0.74 | 0.68 | 0.69 | 87 
-COVID19 | 0.84 | 0.70 | 0.76 | 87
+Normal | 0.76 | 0.82 | 0.78 | 87 
+Pneumonia | 0.75 | 0.79 | 0.77 | 87 
+COVID19 | 0.92 | 0.77 | 0.83 | 87
 
 ![](img/confusion_matrix.png)
 
