@@ -67,8 +67,8 @@ For the training the following hyperparameters are used:
 
 ### Results:
 - Accuracy: 0.98
-- Val Accuracy: 0.77
-- Val Loss: 1.16
+- Val Accuracy: 0.80
+- Val Loss: 1.13
 
 Results | #Precision | #Recall | #f1-score | #support 
 --- | --- | --- | --- |--- 
