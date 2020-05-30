@@ -14,8 +14,8 @@ import skimage
 from skimage.transform import resize
 
 
-from keras.layers import MaxPooling2D,BatchNormalization,Activation,Conv2D,Flatten,Dense,add,Dropout,AveragePooling2D
-
+from keras.layers import Input,MaxPooling2D,BatchNormalization,Activation,Conv2D,Flatten,Dense,add,Dropout,AveragePooling2D
+from keras.models import Model
 
 
 from tqdm import tqdm
@@ -66,7 +66,7 @@ def Unit(x,filters,pool=False):
 def MiniModel(input_shape):
 
 
-    images = keras.Input(input_shape)
+    images = Input(input_shape)
     net = Conv2D(filters=16, kernel_size=[7, 7],
                  strides=[2, 2], padding="same")(images)
 
@@ -105,14 +105,14 @@ def MiniModel(input_shape):
 
 
 
-    #net = layers.Dropout(0.6)(net)
+    net = Dropout(0.2)(net)
 
     net = AveragePooling2D(pool_size=(2,2))(net)
     net = Flatten()(net)
 
     net = Dense(units=3,activation="softmax")(net)
 
-    model = keras.Model(inputs=images,outputs=net)
+    model = Model(inputs=images,outputs=net)
 
     return model
 
@@ -130,10 +130,7 @@ def plot_confusion_matrix(cm, classes,
                           normalize=False,
                           title='Confusion matrix',
                           cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
+ 
     plt.figure(10)
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
     plt.title(title)
@@ -216,26 +213,25 @@ test_y = np.load("test_y.npy");
 train_x = train_x.astype('float32') / 255
 test_x = test_x.astype('float32') / 255
 
-#Subtract the mean image from both train and test set
 train_x = train_x - train_x.mean()
 test_x = test_x - test_x.mean()
 
-#Divide by the standard deviation
 train_x = train_x / train_x.std(axis=0)
 test_x = test_x / test_x.std(axis=0)
 
 
-datagen = ImageDataGenerator(rotation_range=10,
+datagen = ImageDataGenerator(
+
+                             zoom_range=[0.5,1.0],
                              width_shift_range=5. / 32,
                              height_shift_range=5. / 32,
                              horizontal_flip=True)
 
-# Compute quantities required for featurewise normalization
-# (std, mean, and principal components if ZCA whitening is applied).
+
 datagen.fit(train_x)
 
 
-#Encode the labels to vectors
+
 train_y = keras.utils.to_categorical(train_y, 3)
 test_y = keras.utils.to_categorical(test_y,3)
 
@@ -249,9 +245,9 @@ model.summary()
 #Specify the training components
 sgd = optimizers.SGD(lr=0.0001, momentum=0.0, decay=0.0, nesterov=False)
 
-epochs = 60
-bs = 32
-steps_per_epoch = ceil(460/bs)
+epochs = 70
+bs = 16
+steps_per_epoch = ceil(270/bs)
 
 
 model.compile(optimizer=keras.optimizers.Adam(),
