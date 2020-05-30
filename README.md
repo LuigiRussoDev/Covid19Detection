@@ -67,14 +67,14 @@ For the training the following hyperparameters are used:
 
 ### Results:
 - Accuracy: 0.98
-- Val Accuracy: 0.75
+- Val Accuracy: 0.77
 - Val Loss: 1.16
 
 Results | #Precision | #Recall | #f1-score | #support 
 --- | --- | --- | --- |--- 
-Normal | 0.71 | 0.83 | 0.76 | 87 
-Pneumonia | 0.73 | 0.74 | 0.73 | 87 
-COVID19 | 0.86 | 0.70 | 0.77 | 87
+Normal | 0.73 | 0.87 | 0.80 | 87 
+Pneumonia | 0.73 | 0.68 | 0.69 | 87 
+COVID19 | 0.84 | 0.70 | 0.76 | 87
 
 ![](img/confusion_matrix.png)
 
