@@ -18,12 +18,12 @@ For this project I used the follow dataset: https://github.com/ieee8023/covid-ch
 The other two classes: "Pneumonia" and "Normal" has been downloaded from here: https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
 The last link contains a lot of images than first link, so I splitted the train and test set as follow:
 
-1. Train (270 images for each)
+1. Train (462 images for each)
    1. Normal: 
    1. Covid
    1. Pneumonia
 
-1. Test (87 images for each)
+1. Test (198 images for each)
    1. Normal
    1. Covid
    1. Pneumonia
@@ -57,7 +57,7 @@ $ python resnet4.py
 ### Hyperparameter
 For the training the following hyperparameters are used: 
 - AdamOptimization in schedule
-- 60 Epochs
+- 70 Epochs
 - BatchSize 16
 - Last layer a softmax is used
 - Loss function Cross Entropy Categorical is used 
@@ -67,14 +67,14 @@ For the training the following hyperparameters are used:
 
 ### Results:
 - Accuracy: 0.98
-- Val Accuracy: 0.80
-- Val Loss: 1.13
+- Val Accuracy: 0.91
+- Val Loss: 0.58
 
 Results | #Precision | #Recall | #f1-score | #support 
 --- | --- | --- | --- |--- 
-Normal | 0.76 | 0.82 | 0.78 | 87 
-Pneumonia | 0.75 | 0.79 | 0.77 | 87 
-COVID19 | 0.92 | 0.77 | 0.83 | 87
+Normal | 0.83 | 0.97 | 0.90 | 198 
+Pneumonia | 0.99 | 0.98 | 0.98 | 198 
+COVID19 | 0.95 | 0.80 | 0.87 | 197
 
 ![](img/confusion_matrix.png)
 
