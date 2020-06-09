@@ -79,6 +79,9 @@ COVID19 | 0.95 | 0.80 | 0.87 | 197
 ![](img/confusion_matrix.png)
 
 
+![](img/immagine_sav.png)
+
+
 ### Conclusion
 My goal is always to increase the dataset of images from COVID and to take care of the accuracy of my model.
 Through the confusion matrix it has been possible to observe that COVID images are often confused by the Pneumonia class which includes various pneumonia diseases. This "Miss classification" phenomenon is caused by the fact that COVID manifests itself as a form of Pneumonia just like the data in "Pneumonia".
