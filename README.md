@@ -81,6 +81,8 @@ COVID19 | 0.95 | 0.80 | 0.87 | 197
 
 ![](img/immagine_sav.png)
 
+![](img/Roc_each_classes.jpg)
+
 
 ### Conclusion
 My goal is always to increase the dataset of images from COVID and to take care of the accuracy of my model.
