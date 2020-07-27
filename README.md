@@ -14,10 +14,7 @@ My ResNet50 model was developed with the Python programming language and the fol
  - Matplotlib
  
 ### Dataset
-For this project I used the follow dataset: https://github.com/ieee8023/covid-chestxray-dataset. This is the landmark for image x-ray by covid. 
-The other two classes: "Pneumonia" and "Normal" has been downloaded from here: https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
-The last link contains a lot of images than first link, so I splitted the train and test set as follow:
-
+For this project I've used this dataset: https://github.com/haydengunraj/COVIDNet-CT/blob/master/docs/dataset.md. 
 1. Train (462 images for each)
    1. Normal: 
    1. Covid
@@ -66,15 +63,15 @@ For the training the following hyperparameters are used:
 
 
 ### Results:
-- Accuracy: 0.98
-- Val Accuracy: 0.91
-- Val Loss: 0.67
+- Accuracy: 0.99
+- Val Accuracy: 0.95
+- Val Loss: 0.94
 
 Results | #Precision | #Recall | #f1-score | #support 
 --- | --- | --- | --- |--- 
-Normal | 0.83 | 0.97 | 0.89 | 198 
-Pneumonia | 1.00 | 0.97 | 0.99 | 198 
-COVID19 | 0.94 | 0.80 | 0.87 | 198
+Normal | 0.97 | 0.95 | 0.96 | 213 
+Pneumonia | 0.96 | 0.93 | 0.94 | 218 
+COVID19 | 0.96 | 1.0 | 0.98 | 219
 
 ![](img/confusion_matrix.png)
 
