@@ -2,7 +2,7 @@
 In this project I want to show the results about detections COVID19 through X-Ray Images using a DeepLearning approach. 
 Covid             |  Pneumonia | Normal
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/covid.jpg)  |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.jpg) |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/normal.jpg)
+![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/covid.jpg)  |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.png) |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/normal.jpg)
 
  ### Model Description
 The Neural Network used for this work is a Odenet neural network: https://arxiv.org/abs/1806.07366
