@@ -1,4 +1,5 @@
 # Covid19Detection
+<img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.png" width="48">
 In this project I want to show the results about detections COVID19 through X-Ray Images using a DeepLearning approach. 
 Covid             |  Pneumonia | Normal
 :-------------------------:|:-------------------------:|:-------------------------:
