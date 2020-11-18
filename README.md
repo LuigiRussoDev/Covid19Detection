@@ -1,12 +1,8 @@
 # Covid19Detection
-<img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/covid.png" width="200">
-<img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.png" width="200">
-<img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/normal.png" width="200">
-
 In this project I want to show the results about detections COVID19 through X-Ray Images using a DeepLearning approach. 
 Covid             |  Pneumonia | Normal
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/covid.jpg)  |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.png) |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/normal.png)
+![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/covid.jpg) <img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/covid.jpg"  width="120" height="120">  |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.png) <img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/pneumonia.jpg"  width="120" height="120"> |  ![](https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/normal.png) <img src="https://github.com/LuigiRussoDev/Covid19Detection/blob/master/img/normal.jpg"  width="120" height="120">
 
  ### Model Description
 The Neural Network used for this work is a Odenet neural network: https://arxiv.org/abs/1806.07366
